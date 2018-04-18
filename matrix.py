@@ -112,3 +112,21 @@ def new_matrix(rows = 4, cols = 4):
         for r in range( rows ):
             m[c].append( 0 )
     return m
+
+def copy_matrix(m):
+    t = new_matrix(len(m), len(m[0]))
+    ident(t)
+
+    print len(m[0])
+    print len(m)
+
+    for c in range( len(m) ):
+        for r in range( len(m[0]) ):
+            #print c
+            #print r
+            print m[c][r]
+            #t[c][r] = m[c][r]
+    return t
+
+
+    
